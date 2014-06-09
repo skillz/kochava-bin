@@ -16,7 +16,6 @@
 
 @optional
 - (void) KochavaConnectionDidFinishLoading:(NSDictionary *)responseDict;
-- (void) KochavaIdentityLinkResult:(bool)identityLinkSuccess;
 - (void) KochavaConnectionDidFailWithError:(NSError *)error;
 
 @end
@@ -52,7 +51,6 @@
 
 @protocol KochavaTrackerClientDelegate <NSObject>
 @optional
-- (void) Kochava_identityLinkResult:(bool)identityLinkResult;
 - (void) Kochava_attributionResult:(NSDictionary*)attributionResult;
 - (void) Kochava_presentInitAd:(bool)presentInitAdResult;
 
